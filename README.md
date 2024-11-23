@@ -51,9 +51,9 @@ Game should have a menu that allows to configure parameters
 * Load;
 
 # Tasks by student:
-1) **Student number:** 3
+1) **Student number:** 11
 2) **Game:** tik-tac-toe 3x3
-3) **Config format:** INI
+3) **Config format:** JSON
 
 # Technical details:
 In this project i'm going to use Qt&C++. As for the HW I'm going to use Ardeino.
