@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Yuriy\\Desktop\\Data Receiver\\",
+  "WorkspaceRootPath": "M:\\CSAD\\csad2425ki48mahasyi011\\Data Receiver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DC79F66-48E5-4D9F-9026-7F7EFEE93255}|Data Receiver\\Data Receiver.vcxproj|C:\\Users\\Yuriy\\Desktop\\Data Receiver\\Data Receiver\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4DC79F66-48E5-4D9F-9026-7F7EFEE93255}|Data Receiver\\Data Receiver.vcxproj|M:\\CSAD\\csad2425ki48mahasyi011\\Data Receiver\\Data Receiver\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4DC79F66-48E5-4D9F-9026-7F7EFEE93255}|Data Receiver\\Data Receiver.vcxproj|solutionrelative:Data Receiver\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FileName.cpp",
-              "DocumentMoniker": "C:\\Users\\Yuriy\\Desktop\\Data Receiver\\Data Receiver\\FileName.cpp",
+              "DocumentMoniker": "M:\\CSAD\\csad2425ki48mahasyi011\\Data Receiver\\Data Receiver\\FileName.cpp",
               "RelativeDocumentMoniker": "Data Receiver\\FileName.cpp",
-              "ToolTip": "C:\\Users\\Yuriy\\Desktop\\Data Receiver\\Data Receiver\\FileName.cpp",
+              "ToolTip": "M:\\CSAD\\csad2425ki48mahasyi011\\Data Receiver\\Data Receiver\\FileName.cpp",
               "RelativeToolTip": "Data Receiver\\FileName.cpp",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAwwFQAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAcwEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T18:19:25.486Z",
               "EditorCaption": ""
