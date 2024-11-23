@@ -1,0 +1,55 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: windows
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up a C++ build environment
+      - name: Set up C++ environment
+        uses: actions/setup-cpp@v2
+        with:
+          compiler: gcc
+          cpp-version: '17'
+
+      # Install dependencies (if needed)
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential cmake
+
+      # Build the project
+      - name: Build project
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+
+      # Run tests
+      - name: Run tests
+        run: |
+          cd build
+          ctest --output-on-failure
+        continue-on-error: false
+
+      # Upload binaries and test reports as artifacts
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-and-test-artifacts
+          path: |
+            build/*.out
+            build/*.log
+            build/*.txt
