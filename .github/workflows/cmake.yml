@@ -18,13 +18,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up a C++ build environment
-      - name: Set up C++ environment
-        uses: actions/setup-cpp@v2
-        with:
-          compiler: gcc
-          cpp-version: '17'
-
       # Install dependencies (if needed)
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y build-essential cmake
