@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Yuriy/Desktop/Receiver",
-      "program": "c:/Users/Yuriy/Desktop/Receiver/build/Debug/outDebug",
+      "cwd": "m:/CSAD/csad2425ki48mahasyi011/Receiver",
+      "program": "m:/CSAD/csad2425ki48mahasyi011/Receiver/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
