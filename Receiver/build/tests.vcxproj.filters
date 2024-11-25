@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="M:\CSAD\csad2425ki48mahasyi011\Receiver\Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="M:\CSAD\csad2425ki48mahasyi011\Receiver\SerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="M:\CSAD\csad2425ki48mahasyi011\Receiver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1D3F3B0C-6E76-3796-882F-AD8433CAC99B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
