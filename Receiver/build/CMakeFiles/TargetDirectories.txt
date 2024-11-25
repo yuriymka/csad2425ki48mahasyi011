@@ -1,0 +1,4 @@
+M:/CSAD/csad2425ki48mahasyi011/Receiver/build/CMakeFiles/tictactoe.dir
+M:/CSAD/csad2425ki48mahasyi011/Receiver/build/CMakeFiles/tests.dir
+M:/CSAD/csad2425ki48mahasyi011/Receiver/build/CMakeFiles/ALL_BUILD.dir
+M:/CSAD/csad2425ki48mahasyi011/Receiver/build/CMakeFiles/ZERO_CHECK.dir

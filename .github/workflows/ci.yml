@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build and Test
-    runs-on: windows
+    runs-on: windows-latest
 
     steps:
       # Checkout the code
