@@ -3,78 +3,24 @@ name: CMake Build and Test
 on:
   push:
     branches:
-      - '*'
+      - main
   pull_request:
-    branches:
-      - '*'
 
 jobs:
-  cpp-arduino-build-and-test:
-    runs-on: windows-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      
-      - name: Встановити Arduino CLI
-        uses: arduino/setup-arduino-cli@v1
-        with:
-          version: '0.19.2'
-
-      
-      - name: Встановити CMake
-        run: choco install cmake
-
-      
-      - name: Встановити платформу Arduino AVR
-        run: arduino-cli core install arduino:avr
-
-      
-      - name: Конфігурація CMake
-        run: cmake -S . -B build
-        shell: cmd
-
-      
-      - name: Збірка з CMake
-        run: cmake --build build
-        shell: cmd
-
-      
+      - uses: actions/checkout@v3
+      - name: Set up CMake
+        uses: lukka/get-cmake@v3
+      - name: Configure and Build
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
       - name: Run Tests
         run: |
           cd build
-          ctest --output-on-failure --output-log test_results.txt || true
-        shell: cmd
-
-      
-      - name: List build directory
-        run: dir build
-        shell: cmd
-
-      
-      - name: Ensure test results exist
-        run: |
-          if not exist build\test_results.txt echo "No test results" > build\test_results.txt
-        shell: cmd
-
-      
-      - name: Завантажити артефакти збірки
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-artifacts
-          path: out/*
-      
-                
-      - name: Archive test results
-        if: always()
-        run: |
-          move build\test_results.txt .
-        shell: cmd
-
-    
-      - name: Upload test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: Test Results
-          path: test_results.txt
+          ./tests
