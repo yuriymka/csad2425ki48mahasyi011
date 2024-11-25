@@ -1,0 +1,69 @@
+\doxysection{Serial\+Port Class Reference}
+\hypertarget{class_serial_port}{}\label{class_serial_port}\index{SerialPort@{SerialPort}}
+
+
+{\ttfamily \#include $<$Serial\+Port.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_serial_port_ab71d612386a2d6d60a3b1635abd2b35a}{Serial\+Port}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{_receiver_8cpp_ab0b8771c8e716441d054c01f865f0e63}{port\+Name}})
+\item 
+\mbox{\hyperlink{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{\texorpdfstring{$\sim$}{\string~}\+Serial\+Port}} ()
+\item 
+int \mbox{\hyperlink{class_serial_port_a6d14fa4e371c25e957a92c0adf3ac011}{read\+Serial\+Port}} (const char \texorpdfstring{$\ast$}{*}buffer, unsigned int buf\+\_\+size)
+\item 
+bool \mbox{\hyperlink{class_serial_port_a3ca49feff23bdfccfcd738ff8bd56bf0}{write\+Serial\+Port}} (const char \texorpdfstring{$\ast$}{*}buffer, unsigned int buf\+\_\+size)
+\item 
+bool \mbox{\hyperlink{class_serial_port_a73883aa801c1302297bf0e123bf90bc7}{is\+Connected}} ()
+\item 
+void \mbox{\hyperlink{class_serial_port_af053dd018c1797eb884cf9230cd11420}{close\+Serial}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_serial_port_ab71d612386a2d6d60a3b1635abd2b35a}\index{SerialPort@{SerialPort}!SerialPort@{SerialPort}}
+\index{SerialPort@{SerialPort}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{SerialPort()}{SerialPort()}}
+{\footnotesize\ttfamily \label{class_serial_port_ab71d612386a2d6d60a3b1635abd2b35a} 
+Serial\+Port\+::\+Serial\+Port (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{port\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}\index{SerialPort@{SerialPort}!````~SerialPort@{\texorpdfstring{$\sim$}{\string~}SerialPort}}
+\index{````~SerialPort@{\texorpdfstring{$\sim$}{\string~}SerialPort}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SerialPort()}{\string~SerialPort()}}
+{\footnotesize\ttfamily \label{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702} 
+Serial\+Port\+::\texorpdfstring{$\sim$}{\string~}\+Serial\+Port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serial_port_af053dd018c1797eb884cf9230cd11420}\index{SerialPort@{SerialPort}!closeSerial@{closeSerial}}
+\index{closeSerial@{closeSerial}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{closeSerial()}{closeSerial()}}
+{\footnotesize\ttfamily \label{class_serial_port_af053dd018c1797eb884cf9230cd11420} 
+void Serial\+Port\+::close\+Serial (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_serial_port_a73883aa801c1302297bf0e123bf90bc7}\index{SerialPort@{SerialPort}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily \label{class_serial_port_a73883aa801c1302297bf0e123bf90bc7} 
+bool Serial\+Port\+::is\+Connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_serial_port_a6d14fa4e371c25e957a92c0adf3ac011}\index{SerialPort@{SerialPort}!readSerialPort@{readSerialPort}}
+\index{readSerialPort@{readSerialPort}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{readSerialPort()}{readSerialPort()}}
+{\footnotesize\ttfamily \label{class_serial_port_a6d14fa4e371c25e957a92c0adf3ac011} 
+int Serial\+Port\+::read\+Serial\+Port (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{buffer}{, }\item[{unsigned int}]{buf\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_serial_port_a3ca49feff23bdfccfcd738ff8bd56bf0}\index{SerialPort@{SerialPort}!writeSerialPort@{writeSerialPort}}
+\index{writeSerialPort@{writeSerialPort}!SerialPort@{SerialPort}}
+\doxysubsubsection{\texorpdfstring{writeSerialPort()}{writeSerialPort()}}
+{\footnotesize\ttfamily \label{class_serial_port_a3ca49feff23bdfccfcd738ff8bd56bf0} 
+bool Serial\+Port\+::write\+Serial\+Port (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{buffer}{, }\item[{unsigned int}]{buf\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serial_port_8hpp}{Serial\+Port.\+hpp}}\item 
+\mbox{\hyperlink{_serial_port_8cpp}{Serial\+Port.\+cpp}}\end{DoxyCompactItemize}
