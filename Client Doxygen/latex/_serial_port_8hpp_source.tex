@@ -1,0 +1,36 @@
+\doxysection{Serial\+Port.\+hpp}
+\hypertarget{_serial_port_8hpp_source}{}\label{_serial_port_8hpp_source}\mbox{\hyperlink{_serial_port_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ Author:\ Manash\ Kumar\ Mandal}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*\ Modified\ Library\ introduced\ in\ Arduino\ Playground\ which\ does\ not\ work}}
+\DoxyCodeLine{00004\ \textcolor{comment}{*\ This\ works\ perfectly}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*\ LICENSE:\ MIT}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ARDUINO\_WAIT\_TIME\ 2000}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ MAX\_DATA\_LENGTH\ 255}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <windows.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serial_port}{SerialPort}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ HANDLE\ handler;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ connected;}
+\DoxyCodeLine{00021\ \ \ \ \ COMSTAT\ status;}
+\DoxyCodeLine{00022\ \ \ \ \ DWORD\ errors;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_serial_port_ab71d612386a2d6d60a3b1635abd2b35a}{SerialPort}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{_receiver_8cpp_ab0b8771c8e716441d054c01f865f0e63}{portName}});}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{\string~SerialPort}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_serial_port_a6d14fa4e371c25e957a92c0adf3ac011}{readSerialPort}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *buffer,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ buf\_size);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_port_a3ca49feff23bdfccfcd738ff8bd56bf0}{writeSerialPort}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *buffer,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ buf\_size);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_port_a73883aa801c1302297bf0e123bf90bc7}{isConnected}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serial_port_af053dd018c1797eb884cf9230cd11420}{closeSerial}}();}
+\DoxyCodeLine{00031\ \};}
+
+\end{DoxyCode}
